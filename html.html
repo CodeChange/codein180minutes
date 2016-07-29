@@ -50,7 +50,8 @@
               
               <article class="markdown-body entry-content" itemprop="text" id="grip-content">
                 <h1>
-<a id="user-content-html-introductory-course" class="anchor" href="#html-introductory-course" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HTML Introductory Course</h1>
+<a id="user-content-html-introductory-course" class="anchor" href="#html-introductory-course" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/ScriptSmith/codein180minutes/blob/master/html.md">HTML Introductory Course</a>
+</h1>
 
 <h3>
 <a id="user-content-topics" class="anchor" href="#topics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Topics</h3>
@@ -154,7 +155,7 @@
     &lt;/<span class="pl-ent">body</span>&gt;
 &lt;/<span class="pl-ent">html</span>&gt;</pre></div>
 
-
+<p><a href="https://jsfiddle.net/3xdzgjt6/">DEMO</a> &lt;-- Click here to see what the above code does</p>
 
 <p>Try and copy this code into atom.</p>
 
@@ -774,7 +775,8 @@ Click me!
 
 <p>Here is an example of the contents of a typical CSS file</p>
 
-<div class="highlight highlight-source-css"><pre><span class="pl-ent">body</span> {
+<div class="highlight highlight-source-css"><pre>
+<span class="pl-ent">body</span> {
     <span class="pl-c1"><span class="pl-c1">font</span></span>: <span class="pl-c1">100<span class="pl-k">%</span></span> <span class="pl-c1">Lucida</span> Sans, <span class="pl-c1">Verdana</span>;
     <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">20<span class="pl-k">px</span></span>;
     <span class="pl-c1"><span class="pl-c1">line-height</span></span>: <span class="pl-c1">26<span class="pl-k">px</span></span>;
@@ -782,9 +784,63 @@ Click me!
 
 <span class="pl-e">.container</span> {
     <span class="pl-c1">xmin-<span class="pl-c1">width</span></span>: <span class="pl-c1">900<span class="pl-k">px</span></span>;
+}</pre></div>
+
+<p>CSS files are made up of CSS rules. CSS rules are made up of selectors, properties and values.</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-ent">p</span> {
+    <span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">16<span class="pl-k">pt</span></span>;
+}</pre></div>
+
+<p><code>p</code> is the selector</p>
+
+<p><code>font-size</code> is the property</p>
+
+<p><code>16pt</code> is the value</p>
+
+<h3>
+<a id="user-content-block-and-inline-elements" class="anchor" href="#block-and-inline-elements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Block and inline elements</h3>
+
+<p>Block elements like <code>&lt;h1&gt;</code> , <code>&lt;p&gt;</code> , <code>&lt;ul&gt;</code> , and <code>&lt;li&gt;</code> always appear on the page as a new line.</p>
+
+<p>Inline elements like <code>&lt;a&gt;</code> , <code>&lt;b&gt;</code> , <code>&lt;em&gt;</code> , and <code>&lt;img&gt;</code> always appear on the page on the same line.</p>
+
+<h3>
+<a id="user-content-divs-and-spans" class="anchor" href="#divs-and-spans" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DIVs and SPANs</h3>
+
+<p>You can group elements of HTML that you want to apply the same style to by closing them in <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> tags depending on whether you want to group as a block or inline respectively.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">h1</span>&gt;Title&lt;/<span class="pl-ent">h1</span>&gt;
+    &lt;<span class="pl-ent">p</span>&gt;Paragraph 1&lt;/<span class="pl-ent">p</span>&gt;
+    &lt;<span class="pl-ent">p</span>&gt;Paragraph 2&lt;/<span class="pl-ent">p</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>
+<a id="user-content-applying-css" class="anchor" href="#applying-css" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Applying CSS</h3>
+
+<p>You can apply CSS to specific sections of the document by defining classes and IDs. Classes apply CSS to many elements of an html document, and IDs apply CSS to just one:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.news</span> {
+    <span class="pl-c1"><span class="pl-c1">font-weight</span></span>: <span class="pl-c1">bold</span>;
+    <span class="pl-c1"><span class="pl-c1">font-family</span></span>: <span class="pl-c1">serif</span>;
 }
 
-</pre></div>
+<span class="pl-e">#headline</span> {
+    <span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">25<span class="pl-k">pt</span></span>;
+}</pre></div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">h1</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>headline<span class="pl-pds">"</span></span>&gt;BIG NEWS&lt;/<span class="pl-ent">h1</span>&gt;
+&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>news<span class="pl-pds">"</span></span>&gt;Details, details, details, details, details, details, details, details.&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>news<span class="pl-pds">"</span></span>&gt;Details, details, details, details, details, details, details, details.&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>news<span class="pl-pds">"</span></span>&gt;Details, details, details, details, details, details, details, details.&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>news<span class="pl-pds">"</span></span>&gt;Details, details, details, details, details, details, details, details.&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+
+<p><a href="https://jsfiddle.net/ff9tL9xk/">DEMO</a></p>
+
+<h3>
+<a id="user-content-demonstration" class="anchor" href="#demonstration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://www.w3schools.com/css/demo_default.htm">Demonstration</a>
+</h3>
 
 <p>The following page represents the power that CSS has to change the look and feel of a website.</p>
 
@@ -798,7 +854,7 @@ Click me!
 <a id="user-content-additional-functionality" class="anchor" href="#additional-functionality" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Additional Functionality</h2>
 
 <h3>
-<a id="user-content-embeding-youtube-videos" class="anchor" href="#embeding-youtube-videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Embeding youtube videos</h3>
+<a id="user-content-embedding-youtube-videos" class="anchor" href="#embedding-youtube-videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Embedding youtube videos</h3>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">iframe</span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>560<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>315<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://www.youtube.com/embed/s86-Z-CbaHA<span class="pl-pds">"</span></span> <span class="pl-e">frameborder</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">allowfullscreen</span>&gt;&lt;/<span class="pl-ent">iframe</span>&gt;</pre></div>
 
@@ -823,7 +879,7 @@ Click me!
 <a id="user-content-javascript" class="anchor" href="#javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Javascript</h3>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
-<span class="pl-en">alert</span>(<span class="pl-s"><span class="pl-pds">"</span>hi<span class="pl-pds">"</span></span>);
+<span class="pl-en">alert</span>(<span class="pl-s"><span class="pl-pds">"</span>Hi<span class="pl-pds">"</span></span>);
 <span class="pl-k">&lt;</span><span class="pl-k">/</span>script<span class="pl-k">&gt;</span></pre></div>
 
 <h2>
@@ -847,7 +903,41 @@ Click me!
 <li>Your contact information</li>
 <li>Links to your social media</li>
 <li>Pictures of yourself</li>
+<li>A table describing your availability</li>
+<li>A map that shows where you work</li>
 </ul>
+
+<h3>
+<a id="user-content-project-2---from-scratch" class="anchor" href="#project-2---from-scratch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project 2 - From scratch</h3>
+
+<p>Now try to make the same site using your own stying. You can refer to the <a href="css.pdf">CSS reference</a> or <a href="http://www.w3schools.com/css/">w3Schools</a> if you need help or ideas.</p>
+
+<p>Start with this structure:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span>&gt;
+    &lt;<span class="pl-ent">head</span>&gt;
+        &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">title</span>&gt;&lt;/<span class="pl-ent">title</span>&gt;
+    &lt;/<span class="pl-ent">head</span>&gt;
+    &lt;<span class="pl-ent">body</span>&gt;
+
+    &lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+
+<h2>
+<a id="user-content-further-reading" class="anchor" href="#further-reading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further reading</h2>
+
+<p><a href="codechangers.slack.com">Code Changers</a></p>
+
+<ul>
+<li><a href="http://w3schools.com/html">w3Schools HTML</a></li>
+<li><a href="http://www.w3schools.com/css/">w3Schools CSS</a></li>
+<li><a href="http://www.w3schools.com/bootstrap">w3Schools Bootstrap</a></li>
+<li><a href="http://www.w3schools.com/js/default.asp">w3schools Javascript</a></li>
+</ul>
+
+<p>Finally, you can test your knowledge by attempting <a href="exercise.zip">this simple exercise</a></p>
 
               </article>
             </div>

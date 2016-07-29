@@ -1,4 +1,5 @@
 # [HTML Introductory Course](https://github.com/ScriptSmith/codein180minutes/blob/master/html.md)
+[DOWNLOAD](https://github.com/ScriptSmith/codein180minutes/archive/master.zip)
 ### Topics
 1. Using a text editor
 2. How websites work

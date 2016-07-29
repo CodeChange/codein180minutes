@@ -702,14 +702,16 @@ You can apply CSS to specific sections of the document by defining classes and I
 <p class="news">Details, details, details, details, details, details, details, details.</p>
 ```
 
-### Demo
+[DEMO](https://jsfiddle.net/ff9tL9xk/)
+
+### [Demonstration](http://www.w3schools.com/css/demo_default.htm)
 The following page represents the power that CSS has to change the look and feel of a website.
 <hr>
 <iframe style="width:90%;height:600px;background:#ffffff;border:none;" src="http://www.w3schools.com/css/demo_default.htm"></iframe>
 <hr>
 
 ## Additional Functionality
-### Embeding youtube videos
+### Embedding youtube videos
 ```html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s86-Z-CbaHA" frameborder="0" allowfullscreen></iframe>
 ```
@@ -756,7 +758,8 @@ Now try to make the same site using your own stying. You can refer to the [CSS r
 
 Start with this structure:
 
-```html<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -776,4 +779,4 @@ Start with this structure:
 * [w3Schools Bootstrap](http://www.w3schools.com/bootstrap)
 * [w3schools Javascript](http://www.w3schools.com/js/default.asp)
 
-You can test your knowledge by attempting [this simple exercise](exercise.zip)
+Finally, you can test your knowledge by attempting [this simple exercise](exercise.zip)

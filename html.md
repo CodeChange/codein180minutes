@@ -18,7 +18,7 @@
       * Youtube videos
       * Google maps
       * Javascript
-7. Simple exercises to take home and talk about on Slack
+7. Simple exercises to take home
 
 
 ## Using a Text Editor
@@ -416,7 +416,7 @@ Definition lists look like
 	<dt>HTML</dt>
     <dd>Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.</dd>
 	<dt>CSS</dt>
-    <dd>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.</dt>
+    <dd>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.</dd>
     <dt>Javascript</dt>
     <dd>an object-oriented computer programming language commonly used to create interactive effects within web browsers.</dt>
 </dl>
@@ -426,7 +426,7 @@ Definition lists look like
 	<dt>HTML</dt>
     <dd>Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.</dd>
 	<dt>CSS</dt>
-    <dd>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.</dt>
+    <dd>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.</dd>
     <dt>Javascript</dt>
     <dd>an object-oriented computer programming language commonly used to create interactive effects within web browsers.</dt>
 </dl>
@@ -706,7 +706,7 @@ You can apply CSS to specific sections of the document by defining classes and I
 [DEMO](https://jsfiddle.net/ff9tL9xk/)
 
 ### [Demonstration](http://www.w3schools.com/css/demo_default.htm)
-The following page represents the power that CSS has to change the look and feel of a website.
+The following page exhibits the power that CSS has to change the look and feel of a website.
 <hr>
 <iframe style="width:90%;height:600px;background:#ffffff;border:none;" src="http://www.w3schools.com/css/demo_default.htm"></iframe>
 <hr>

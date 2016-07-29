@@ -632,7 +632,7 @@ Submit buttons will send the entered data to the location described in the actio
 ## CSS
 *We won't be covering CSS in great detail in this session*
 
-CSS Stands for **C**ascading **S**tyle **S**heet. The term 'Cascading' refers to the priority of the styles being applied.
+CSS Stands for Cascading Style Sheet. The term 'Cascading' refers to the priority of the styles being applied.
 
 Here is an example of the contents of a typical CSS file
 ```css
@@ -646,51 +646,6 @@ body {
     xmin-width: 900px;
 }
 
-.wrapper {
-    position: relative;
-    overflow: auto;
-}
-
-#top, #sidebar, #bottom, .menuitem {
-    border-radius: 4px;
-    margin: 4px;
-}
-
-#top {
-    background-color: #4CAF50;
-    color: #ffffff;
-    padding: 15px;
-}
-
-#menubar {
-    width: 200px;
-    float: left
-}
-
-#main {
-    padding: 10px;
-    margin: 0 210px;
-}
-
-#sidebar {
-    background-color: #32a4e7;
-    color: #ffffff;
-    padding: 10px;
-    width: 180px;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    position: absolute;
-}
-
-#bottom {
-    border: 1px solid #d4d4d4;
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-    font-size: 70%;
-    line-height: 14px;
-}
 
 ```
 The following page represents the power that CSS has to change the look and feel of a website.

@@ -1,4 +1,4 @@
-# HTML Introductory Course
+# [HTML Introductory Course](https://github.com/ScriptSmith/codein180minutes/blob/master/html.md)
 ### Topics
 1. Using a text editor
 2. How websites work
@@ -629,6 +629,7 @@ Click me!
 
 Submit buttons will send the entered data to the location described in the action attribute.
 
+
 ## CSS
 *We won't be covering CSS in great detail in this session*
 
@@ -636,6 +637,7 @@ CSS Stands for Cascading Style Sheet. The term 'Cascading' refers to the priorit
 
 Here is an example of the contents of a typical CSS file
 ```css
+
 body {
     font: 100% Lucida Sans, Verdana;
     margin: 20px;
@@ -645,9 +647,62 @@ body {
 .container {
     xmin-width: 900px;
 }
-
-
 ```
+
+CSS files are made up of CSS rules. CSS rules are made up of selectors, properties and values.
+
+```css
+p {
+    font-size: 16pt;
+}
+```
+
+`p` is the selector
+
+`font-size` is the property
+
+`16pt` is the value
+
+### Block and inline elements
+Block elements like `<h1>` , `<p>` , `<ul>` , and `<li>` always appear on the page as a new line.
+
+Inline elements like `<a>` , `<b>` , `<em>` , and `<img>` always appear on the page on the same line.
+
+### DIVs and SPANs
+
+You can group elements of HTML that you want to apply the same style to by closing them in `<div>` or `<span>` tags depending on whether you want to group as a block or inline respectively.
+
+```html
+<div>
+    <h1>Title</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+</div>
+```
+
+### Applying CSS
+You can apply CSS to specific sections of the document by defining classes and IDs. Classes apply CSS to many elements of an html document, and IDs apply CSS to just one:
+
+```css
+.news {
+    font-weight: bold;
+    font-family: serif;
+}
+
+#headline {
+    font-size: 25pt;
+}
+```
+
+```html
+<h1 id="headline">BIG NEWS</h1>
+<p class="news">Details, details, details, details, details, details, details, details.</p>
+<p class="news">Details, details, details, details, details, details, details, details.</p>
+<p class="news">Details, details, details, details, details, details, details, details.</p>
+<p class="news">Details, details, details, details, details, details, details, details.</p>
+```
+
+### Demo
 The following page represents the power that CSS has to change the look and feel of a website.
 <hr>
 <iframe style="width:90%;height:600px;background:#ffffff;border:none;" src="http://www.w3schools.com/css/demo_default.htm"></iframe>
@@ -673,7 +728,7 @@ The following page represents the power that CSS has to change the look and feel
 ### Javascript
 ```javascript
 <script type="text/javascript">
-alert("hi");
+alert("Hi");
 </script>
 ```
 
@@ -693,3 +748,32 @@ Consider including:
 * Your contact information
 * Links to your social media
 * Pictures of yourself
+* A table describing your availability
+* A map that shows where you work
+
+### Project 2 - From scratch
+Now try to make the same site using your own stying. You can refer to the [CSS reference](css.pdf) or [w3Schools](http://www.w3schools.com/css/) if you need help or ideas.
+
+Start with this structure:
+
+```html<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+
+    </body>
+</html>
+```
+
+## Further reading
+[Code Changers](codechangers.slack.com)
+
+* [w3Schools HTML](http://w3schools.com/html)
+* [w3Schools CSS](http://www.w3schools.com/css/)
+* [w3Schools Bootstrap](http://www.w3schools.com/bootstrap)
+* [w3schools Javascript](http://www.w3schools.com/js/default.asp)
+
+You can test your knowledge by attempting [this simple exercise](exercise.zip)
